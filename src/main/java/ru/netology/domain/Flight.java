@@ -36,11 +36,13 @@ public class Flight implements Comparable<Flight> {
 
     @Override
     public int hashCode() {
+
         return Objects.hash(from, to);
     }
 
     @Override
     public int compareTo(Flight o) {
+
         return price - o.price;
     }
 }
